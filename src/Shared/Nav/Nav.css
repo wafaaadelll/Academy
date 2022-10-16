@@ -1,0 +1,9 @@
+.active{
+    background-color: white !important;
+    color: blue !important;
+    text-align: center;
+}
+.navbar{
+    background-color: transparent;
+    color: gray;
+}
