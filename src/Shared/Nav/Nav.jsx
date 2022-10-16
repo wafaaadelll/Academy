@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.css";
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false),
     [nav, setNav] = useState(false);
   const changeBackground = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 66) {
       setNav(true);
     } else {
       setNav(false);
     }
   };
-
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
   useEffect(() => {
     changeBackground();
     // adding the event when scroll change background
@@ -37,7 +40,7 @@ const Nav = () => {
     <nav
       className={`${
         nav ? "navbar active" : "navbar"
-      } w-full bg-transparent fixed`}
+      } w-full bg-transparent fixed z-10`}
     >
       <div
         className={` ${
@@ -100,77 +103,65 @@ const Nav = () => {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {Links.map((item, index) => {
                 return !item.sublinks ? (
-                  <li className="hover:text-blue-600" key={index}>
+                  <li className="hover:underline text-white" key={index}>
                     <a>{item.title}</a>
                   </li>
                 ) : (
-                  <div>
-                    <button
-                      id="dropdownDefault"
-                      data-dropdown-toggle="dropdown"
-                      class="hover:text-blue-600 inline-flex items-center"
-                      type="button"
-                    >
-                      Dropdown button{" "}
-                      <svg
-                        class="ml-2 w-4 h-4"
-                        aria-hidden="true"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M19 9l-7 7-7-7"
-                        ></path>
-                      </svg>
-                    </button>
-                    <div
-                      id="dropdown"
-                      class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
-                    >
-                      <ul
-                        class="py-1 text-sm text-gray-700 dark:text-gray-200"
-                        aria-labelledby="dropdownDefault"
-                      >
-                        <li>
-                          <a
-                            href="#"
-                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                            Dashboard
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                            Settings
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                            Earnings
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                            Sign out
-                          </a>
-                        </li>
-                      </ul>
+                  <Menu as="div" className="relative inline-block text-left">
+                    <div>
+                      <Menu.Button className="hover:underline text-white inline-flex">
+                        {item.title}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-5 h-5 ml-2 -mr-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </Menu.Button>
                     </div>
-                  </div>
+
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-100"
+                      enterFrom="transform opacity-0 scale-95"
+                      enterTo="transform opacity-100 scale-100"
+                      leave="transition ease-in duration-75"
+                      leaveFrom="transform opacity-100 scale-100"
+                      leaveTo="transform opacity-0 scale-95"
+                    >
+                      <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <div className="py-1">
+                          {item.sublinks.map((sublink, index) => {
+                            return (
+                              <Menu.Item key={index}>
+                                {({ active }) => (
+                                  <a
+                                    href="#"
+                                    className={classNames(
+                                      active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700",
+                                      "block px-4 py-2 text-sm"
+                                    )}
+                                  >
+                                    {sublink.title}
+                                  </a>
+                                )}
+                              </Menu.Item>
+                            );
+                          })}
+                        </div>
+                      </Menu.Items>
+                    </Transition>
+                  </Menu>
                 );
               })}
             </ul>
