@@ -1,9 +1,9 @@
 .active{
     background-color: white !important;
-    color: blue !important;
+    color: rgb(20 36 68) !important;
     text-align: center;
 }
 .navbar{
     background-color: transparent;
-    color: gray;
+    color: white;
 }

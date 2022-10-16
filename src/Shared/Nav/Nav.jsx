@@ -103,13 +103,13 @@ const Nav = () => {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {Links.map((item, index) => {
                 return !item.sublinks ? (
-                  <li className="hover:underline text-white" key={index}>
+                  <li className="hover:underline" key={index}>
                     <a>{item.title}</a>
                   </li>
                 ) : (
                   <Menu as="div" className="relative inline-block text-left">
                     <div>
-                      <Menu.Button className="hover:underline text-white inline-flex">
+                      <Menu.Button className="hover:underline inline-flex">
                         {item.title}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

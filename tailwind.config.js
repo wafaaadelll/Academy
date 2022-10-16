@@ -5,7 +5,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        green: "#a4cd48",
+        head: "rgb(20 36 68)"
+      }
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     },
   },
   plugins: [],
