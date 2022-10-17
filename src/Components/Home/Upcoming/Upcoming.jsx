@@ -4,9 +4,11 @@ import "./Upcoming.css";
 export default function Upcoming() {
   return (
     <div className="mt-12 container">
-      <h2 className="font-bold text-head text-4xl mb-6">Upcoming Programs</h2>
-      <hr className="mb-6 w-20 mx-auto bg-head h-1" />
-      <div class="grid grid-cols-3 gap-4">
+      <h2 className="font-bold text-head text-4xl mb-6 uppercase">
+        Upcoming Programs
+      </h2>
+      <hr className="mb-20 w-20 mx-auto bg-green hover:w-96 h-1" />
+      <div className="grid grid-cols-4 gap-4">
         {Programs.map((program) => {
           return program.upcoming ? (
             <div
@@ -42,6 +44,9 @@ export default function Upcoming() {
           );
         })}
       </div>
+      <button class="bg-head hover:bg-green text-white font-bold mt-20 py-2 px-4 border-b-4 border-green hover:border-head rounded">
+        Veiw Programs Time &rarr;
+      </button>
     </div>
   );
 }

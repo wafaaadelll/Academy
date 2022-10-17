@@ -68,6 +68,8 @@ export default [
     {
         id: "11",
         Name: "Aesthetics diploma",
+        upcoming: true,
+        time:["17" ,<br/>, "November",<br/> , "2022"],
         About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
         img: `${require("../Images/Programs/p11.jpg")}`
     },
