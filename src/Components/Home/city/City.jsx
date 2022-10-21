@@ -1,9 +1,16 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function City() {
+  AOS.init();
   return (
-    <div className="mt-12 container flex items-center">
-      <div className="text-left">
+    <div
+      className="mt-12 container lg:flex items-center justify-center"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div className="text-left mb-5 md:mb-0">
         <h3 className="font-bold text-xl py-6">
           CitySmile, Lorem, ipsum dolor.
         </h3>
@@ -23,16 +30,14 @@ export default function City() {
           <li className="text-gray-600">Lorem ipsum dolor sit amet.</li>
         </ul>
       </div>
-      <div>
+      <div className="w-full">
         <iframe
           src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FCitySmile.Dental.Academy%2Fvideos%2F3050842991873088%2F&show_text=false&width=560&t=0"
-          width="560"
-          height="314"
           scrolling="no"
-          frameborder="0"
-          allowfullscreen="true"
+          frameBorder="0"
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          allowFullScreen="true"
+          allowFullScreen={true}
+          className="md:w-100 w-full md:h-100 h-full mt-5 lg:mt-0 md:mx-auto"
         ></iframe>
       </div>
     </div>

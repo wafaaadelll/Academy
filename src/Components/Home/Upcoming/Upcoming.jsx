@@ -1,15 +1,25 @@
 import React from "react";
-import Programs from "../../../Services/Programs";
+import { Link } from "react-router-dom";
+import Program from "../../../Services/Program";
 import "./Upcoming.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Upcoming() {
+  AOS.init();
+
   return (
-    <div className="mt-12 container">
+    <div
+      className="mt-12 container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <h2 className="font-bold text-head text-4xl mb-6 uppercase">
         Upcoming Programs
       </h2>
-      <hr className="mb-20 w-20 mx-auto bg-green hover:w-96 h-1" />
-      <div className="grid grid-cols-4 gap-4">
-        {Programs.map((program) => {
+      <hr className="md:mb-20 mb-12 w-20 mx-auto bg-green hover:w-96 h-1" />
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+        {Program.map((program) => {
           return program.upcoming ? (
             <div
               className="relative flex justify-center items-center"
@@ -44,9 +54,12 @@ export default function Upcoming() {
           );
         })}
       </div>
-      <button class="bg-head hover:bg-green text-white font-bold mt-20 py-2 px-4 border-b-4 border-green hover:border-head rounded">
+      <Link
+        to={"/Programs"}
+        className="bg-head hover:bg-green text-white font-bold mt-20 py-2 w-52 inline-block border-b-4 border-green hover:border-head rounded"
+      >
         Veiw Programs Time &rarr;
-      </button>
+      </Link>
     </div>
   );
 }

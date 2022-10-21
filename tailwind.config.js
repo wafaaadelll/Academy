@@ -7,8 +7,18 @@ module.exports = {
     extend: {
       colors: {
         green: "#a4cd48",
-        head: "rgb(20 36 68)"
-      }
+        head: "#0d438c",
+      },
+      width: {
+        94:"300px",
+        98:"400px",
+        100:"560px"
+    },
+      height: {
+        41:"180px",
+        100: "314px",
+        50:"240px"
+    }
     },
     container: {
       center: true,

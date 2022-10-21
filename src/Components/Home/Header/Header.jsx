@@ -46,7 +46,7 @@ export default function Header() {
   SwiperCore.use([Autoplay]);
 
   return (
-    <header className="">
+    <>
       <Swiper
         pagination={pagination}
         modules={[Pagination]}
@@ -54,7 +54,7 @@ export default function Header() {
           delay: 1500,
           disableOnInteraction: false,
         }}
-        className="h-screen"
+        className="h-screen w-full"
       >
         {swipe.map((slide, index) => {
           return (
@@ -63,14 +63,14 @@ export default function Header() {
               key={index}
             >
               <section className="new h-screen w-full flex items-center">
-                <div className="w-3/4 mx-auto " data-aos="fade-up">
-                  <h1 className="text-7xl py-10 text-white font-bold">
+                <div className="md:w-3/4 w-full mx-auto " data-aos="fade-up">
+                  <h1 className="lg:text-7xl md:text-3xl text-xl py-10 text-white font-bold">
                     {slide.head}
                   </h1>
-                  <p className="text-white text-xl w-4/5 mx-auto text-center">
+                  <p className="text-white lg:text-xl md:text-lg text-md w-4/5 mx-auto text-center">
                     {slide.pragraph}
                   </p>
-                  <button class=" mt-12 bg-transparent hover:bg-white hover:text-gray-500 text-white font-bold py-2 px-6 border border-white rounded">
+                  <button className=" mt-12 bg-transparent hover:bg-white hover:text-gray-500 text-white font-bold py-2 px-6 border border-white rounded">
                     Learn More
                   </button>
                 </div>
@@ -79,6 +79,6 @@ export default function Header() {
           );
         })}
       </Swiper>
-    </header>
+    </>
   );
 }

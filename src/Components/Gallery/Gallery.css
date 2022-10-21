@@ -1,0 +1,27 @@
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+img.hover-zoom:hover {
+    transform: scale(1.25);
+    transition: all .3s linear;
+}
+
+.offer {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes example {
+    0% {
+        right: 0px;
+        top: 0px;
+    }
+
+    25% {
+        right: 200px;
+        top: 0px;
+    }
+}

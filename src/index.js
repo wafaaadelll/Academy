@@ -4,15 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "@fontsource/raleway"; // Defaults to weight 400.
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HashRouter>
-  <React.StrictMode>
-    <App />
-    </React.StrictMode>
-    </HashRouter>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,8 @@
+.veiw{
+    width: 150px ;
+}
+.veiw:hover{
+    width: 200px;
+    transition-duration: 1000ms;
+    background-color: #a4cd48;
+}
