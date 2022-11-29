@@ -43,7 +43,7 @@ export default function Aboutus() {
       <header></header>
       <section className="container mt-12">
         <h2 className="text-head text-4xl font-bold font border-b w-full pb-3 border-gray-300">
-          City Smile Strategy
+          Academy Strategy
         </h2>
         <div className="text-left pl-10 my-10">
           <ul className="list-decimal">
