@@ -13,14 +13,16 @@ export default function InstructorDtl() {
       </div>
       <section className="container grid gap-4 lg:grid-cols-3">
         <div className="">
-          <img src={thisProduct.img} alt="" className="w-96 h-96" />
+          <img src={thisProduct.profile} alt="" className="w-96 h-96" />
         </div>
-        <div className="text-left ml-5 col-span-2">
+        <div className="text-left ml-5 lg:col-span-2">
           <h2 className="text-green font-semibold text-2xl pb-3">
             Dr. {thisProduct.Name}
           </h2>
-          <h4>{thisProduct.headline}</h4>
-          <hr className="mt-2 mb-14 w-16 h-1 bg-head " />
+          <h4 className="text-head font-semibold">
+            {thisProduct.headline} Course
+          </h4>
+          <hr className="mt-2 mb-14 w-14 h-1 bg-head " />
           <h2 className="border-b pb-2 ">About Dr {thisProduct.Name}</h2>
           <hr className="w-16 mb-5 bg-head h-0.5 -mt-0.5" />
           <ul className="list-disc ml-10">

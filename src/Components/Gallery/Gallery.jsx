@@ -24,7 +24,7 @@ export default function Gallery() {
                       <div className="img-wrapper">
                         <img
                           alt="gallery"
-                          className="block object-cover object-center w-full h-full rounded-lg offerimg hover-zoom"
+                          className="block object-cover object-center w-full h-full rounded-lg offerimg hover-zoom g1p1"
                           src={img.img}
                         />
                       </div>
@@ -38,7 +38,7 @@ export default function Gallery() {
                       <div className="img-wrapper">
                         <img
                           alt="gallery"
-                          className="block object-cover object-center w-full h-full rounded-lg offerimg hover-zoom"
+                          className="block object-cover object-center w-full h-full rounded-lg offerimg hover-zoom g2p2"
                           src={img.img}
                         />
                       </div>
@@ -58,7 +58,7 @@ export default function Gallery() {
                       <div className="img-wrapper">
                         <img
                           alt="gallery"
-                          className="block object-cover object-center w-full h-full rounded-lg offerimg hover-zoom"
+                          className="block object-cover object-center w-full h-full rounded-lg offerimg hover-zoom g1p1"
                           src={img.img}
                         />
                       </div>
@@ -72,7 +72,7 @@ export default function Gallery() {
                       <div className="img-wrapper">
                         <img
                           alt="gallery"
-                          className="block object-cover object-center w-full h-full rounded-lg offerimg hover-zoom"
+                          className="block object-cover object-center w-full h-full rounded-lg offerimg hover-zoom g2p2"
                           src={img.img}
                         />
                       </div>

@@ -60,10 +60,10 @@ export default function Nav() {
             : "navbar "
         } py-5 navigation flex items-center ${
           !nav ? "justify-between" : "justify-between lg:h-24 w-full"
-        }`}
+        } px-10`}
       >
         <a href="/" className="brand-name">
-          <img src={require("../../Images/logo1.png")} alt="logo" />
+          <img src={require("../../Images/logo2.png")} alt="logo" />
         </a>
         <button
           className="hamburger"
@@ -152,7 +152,7 @@ export default function Nav() {
                   </Transition>
                 </Menu>
               ) : (
-                <li key={index} className="font-semibold">
+                <li key={index} className="font font-semibold">
                   <NavLink end to={item.link}>
                     {item.title}
                   </NavLink>
@@ -165,7 +165,8 @@ export default function Nav() {
       <section className="whatsapp bg-green p-2.5 rounded-full text-white hover:text-green hover:border-2 hover:border-green hover:bg-white">
         <a
           aria-label="Chat on WhatsApp"
-          href="https://api.whatsapp.com/send?phone=201501600113&data=AWAqZi1uLSpuuapntBw2olKk-BuZ0Tgl2V5iQ2h9G6W9E25J6xFcUGxD8iTNqzMptotq6pH_3pnVvOIOukwOUdG67XU9suO9Yu7oZoKSCgWueNXubd7BDrUblrPA5HT1I5QRfgxjslWHlmXGyglswRS6zcO8szMA-6PXF1jhOCBGE2iFNb8PZt2-nmNjIOc4eg4pROLmHsNdbIzWNdQyZR1a8zMS_LUIviP8HDpP2xCcbd8uly8fX8ZRkClxlIvDxJxs4-6A1OWbYL9ehpipfkdAIHZCbD9zzmSMAsmZChXDV5CCmZPMO-MMg3Yl9ti3E7w&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR1gTai7rnE9kTIaSs-UELpSLcAP4rAItRFVkfP8ALzILqjPW7USM8UrU7k"
+          target={"_blank"}
+          href="https://api.whatsapp.com/send?phone=201112765868&data=AWAqZi1uLSpuuapntBw2olKk-BuZ0Tgl2V5iQ2h9G6W9E25J6xFcUGxD8iTNqzMptotq6pH_3pnVvOIOukwOUdG67XU9suO9Yu7oZoKSCgWueNXubd7BDrUblrPA5HT1I5QRfgxjslWHlmXGyglswRS6zcO8szMA-6PXF1jhOCBGE2iFNb8PZt2-nmNjIOc4eg4pROLmHsNdbIzWNdQyZR1a8zMS_LUIviP8HDpP2xCcbd8uly8fX8ZRkClxlIvDxJxs4-6A1OWbYL9ehpipfkdAIHZCbD9zzmSMAsmZChXDV5CCmZPMO-MMg3Yl9ti3E7w&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR1gTai7rnE9kTIaSs-UELpSLcAP4rAItRFVkfP8ALzILqjPW7USM8UrU7k"
           className=""
         >
           {" "}

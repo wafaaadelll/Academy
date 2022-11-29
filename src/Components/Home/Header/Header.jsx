@@ -25,21 +25,21 @@ export default function Header() {
       head: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       pragraph:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, necessitatibus esse deleniti repellat incidunt culpa quisquam in enim ratione temporibus?",
-      img: "bg-[url('https://www.spc-eg.com/uploads/slides/t/9.jpg')]",
+      img: "bg-[url('https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/getty_1187833318_2000133220009280118_mbtvwq.jpg')]",
       link: "",
     },
     {
       head: "Lorem ipsum dolor sit amet consectetur.",
       pragraph:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, necessitatibus esse deleniti repellat incidunt culpa quisquam in enim ratione temporibus?",
-      img: "bg-[url('https://www.spc-eg.com/uploads/slides/t/12.jpg')]",
+      img: "bg-[url('https://elearningindustry.com/wp-content/uploads/2019/09/online-courses-what-students-want.jpg')]",
       link: "",
     },
     {
       head: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       pragraph:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, necessitatibus esse deleniti repellat incidunt culpa quisquam in enim ratione temporibus?",
-      img: "bg-[url('https://www.spc-eg.com/uploads/slides/t/9.jpg')]",
+      img: "bg-[url('https://cdn-wordpress-info.futurelearn.com/wp-content/uploads/FL365_Free_Certs_Blog_Header.png')]",
       link: "",
     },
   ];

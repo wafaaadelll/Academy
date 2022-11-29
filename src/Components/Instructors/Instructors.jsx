@@ -43,7 +43,7 @@ export default function Instructors() {
                   <img
                     src={instructor.img}
                     alt={instructor.Name}
-                    className="rounded-full w-full h-44"
+                    className="w-full h-44"
                   />
                 </Link>
               </div>
@@ -51,14 +51,14 @@ export default function Instructors() {
               <div className="pl-1">
                 <Link to={`/Aboutinstructors/${instructor.id}`}>
                   <h3 className="text-left text-xl text-head font-semibold pb-3">
-                    Dr {instructor.Name}
+                    Dr. {instructor.Name}
                   </h3>
                 </Link>
 
                 <div>
                   <AiOutlineUser />
-                  <p className="line-clamp-1 -mt-5 pl-2 lg:ml-0 text-gray-600">
-                    {instructor.about}
+                  <p className="line-clamp-1 -mt-5 pl-5 lg:ml-0 text-gray-600 text-left">
+                    {instructor.headline}
                   </p>
                 </div>
               </div>

@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@devexpress/dx-react-core": "^3.0.6",
-    "@devexpress/dx-react-scheduler": "^3.0.6",
     "@fontsource/raleway": "^4.5.11",
     "@headlessui/react": "^1.7.3",
     "@tailwindcss/line-clamp": "^0.4.2",
@@ -17,7 +15,6 @@
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
-    "scheduler-react": "^2.0.20",
     "swiper": "^8.4.4",
     "web-vitals": "^2.1.4"
   },

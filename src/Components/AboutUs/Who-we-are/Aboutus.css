@@ -1,9 +1,9 @@
 header {
-
-        width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.spc-eg.com/uploads/slides/t/9.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://elearningindustry.com/wp-content/uploads/2019/09/online-courses-what-students-want.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
 }

@@ -11,9 +11,7 @@ export default function City() {
       data-aos-duration="1000"
     >
       <div className="text-left mb-5 md:mb-0">
-        <h3 className="font-bold text-xl py-6">
-          CitySmile, Lorem, ipsum dolor.
-        </h3>
+        <h3 className="font-bold text-xl py-6">Academy, Lorem, ipsum dolor.</h3>
         <p className="text-gray-600 py-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
           voluptatem quisquam in quibusdam, vero tempore velit nostrum rem?
@@ -32,11 +30,11 @@ export default function City() {
       </div>
       <div className="w-full">
         <iframe
-          src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FCitySmile.Dental.Academy%2Fvideos%2F3050842991873088%2F&show_text=false&width=560&t=0"
-          scrolling="no"
-          frameBorder="0"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          allowFullScreen={true}
+          src="https://www.youtube.com/embed/AopF8T43Fno"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
           className="md:w-100 w-full md:h-100 h-full mt-5 lg:mt-0 md:mx-auto"
         ></iframe>
       </div>

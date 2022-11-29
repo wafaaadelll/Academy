@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Footer from "../../Shared/Footer/Footer";
-import HomeNavbar from "../../Shared/Nav/HomeNavbar";
 import Nav from "../../Shared/Nav/Nav";
 import Aboutus from "../AboutUs/Who-we-are/Aboutus";
 import Error from "../Error/Error";
@@ -16,7 +15,6 @@ import Instructors from "../Instructors/Instructors";
 export default function Pages() {
   return (
     <>
-      {/* <HomeNavbar /> */}
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />

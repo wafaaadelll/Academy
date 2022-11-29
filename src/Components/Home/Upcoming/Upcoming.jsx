@@ -37,9 +37,12 @@ export default function Upcoming() {
                   <div className="overlay">
                     <div className="show">
                       <p className="time bg-head w-28">{program.time}</p>
-                      <a className="button py-3 underline hover:bg-green bg-head text-white text-md">
+                      <Link
+                        className="button py-3 underline hover:bg-green bg-head text-white text-md"
+                        to={`/Programs/${program.id}`}
+                      >
                         Show Details
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

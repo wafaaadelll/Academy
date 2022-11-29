@@ -1,76 +1,73 @@
 export default [
     {
         id: "1",
-        Name: "Indirect Veneers",
+        Name: "Social Media",
+        instructor:["1"],
         upcoming: true,
         time:["11" ,<br/>, "October",<br/> , "2022"],
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p1.jpg")}`
+        About: ["Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet","Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet"],
+        img: `${require("../Images/Programs/p1.png")}`
     },
     {
         id: "2",
-        Name: "Basic Impplant",
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p2.jpg")}`
+        Name: "Business Course",
+        instructor:["2"],
+        About: ["Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet","Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet"],
+        upcoming: true,
+        time: ["17", <br />, "November", <br />, "2022"],
+        img: `${require("../Images/Programs/p2.png")}`
     },
     {
         id: "3",
-        Name: "Basic Endodontics",
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p3.jpg")}`
+        Name: "Content Creator",
+        instructor:["3"],
+        About: ["Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet","Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet"],
+        img: `${require("../Images/Programs/p3.png")}`
     },
     {
         id: "4",
-        Name: "Advanced Endodontics",
-        upcoming: true,
-        time:["23" ,<br/>, "November",<br/> , "2022"],
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p4.jpg")}`
+        Name: "Graphic Design",
+        instructor:["4"],
+        About: ["Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet"],
+        img: `${require("../Images/Programs/p4.png")}`
     },
     {
         id: "5",
-        Name: "Minor Surgery",
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p5.jpg")}`
+        Name: "Fashion Design",
+        instructor:["5"],
+        About: ["Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet","Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet"],
+        img: `${require("../Images/Programs/p5.png")}`
     },
     {
         id: "6",
-        Name: "Pedodontics",
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p6.jpg")}`
+        Name: "Web Development ",
+        instructor:["6"],
+        About: ["Lorem, ipsumtur adipisicing elit.","Lorem, ipsum dolor sit amet g elit.","Lorem, ipsum dolor sit elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor sit amet consectetur.","Lorem, ipsum  adipisicing elit."],
+        img: `${require("../Images/Programs/p6.png")}`
     },
     {
         id: "7",
-        Name: "Advanced Implant",
-        upcoming: true,
-        time:["4" ,<br/>, "October",<br/> , "2022"],
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p7.jpg")}`
+        Name: "Modile Development",
+        instructor:["0"],
+        About: ["Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet","Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet"],
+        img: `${require("../Images/Programs/p7.png")}`
     },
     {
         id: "8",
-        Name: "Facial Aesthetics Botox & filter",
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p8.jpg")}`
+        Name: "Data Analyses",
+        upcoming: true,
+        time: ["4", <br />, "October", <br />, "2022"],
+        instructor:["0"],
+        About: ["Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet"],
+        img: `${require("../Images/Programs/p8.png")}`
     },
     {
         id: "9",
-        Name: "Orthodontics",
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p9.jpg")}`
-    },
-    {
-        id: "10",
-        Name: "Occlusion",
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p10.jpg")}`
-    },
-    {
-        id: "11",
-        Name: "Aesthetics diploma",
+        Name: "Digital Marketing",
         upcoming: true,
-        time:["17" ,<br/>, "November",<br/> , "2022"],
-        About: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi eos, rem reiciendis eveniet neque.",
-        img: `${require("../Images/Programs/p11.jpg")}`
+        time: ["17", <br />, "November", <br />, "2022"],
+        instructor:["0"],
+        About: ["Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit.","Lorem, ipsum dolor sit amet consectetur adipisicing elit.","Lorem, ipsum dolor  elit.","Lorem, ipsum dolor sit amet sicing elit.","Lorem, ipsum dolor sit amet","Lorem, ipsum dolor sit ait.","Lorem, ipsut consectetur adipisicing elit.","Lorem, ipsum dolor sit ametg elit."],
+        img: `${require("../Images/Programs/p9.png")}`
     },
 ];

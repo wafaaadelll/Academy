@@ -38,7 +38,7 @@ export default function OurInstructor() {
               <div className="">
                 <Link to={`/Aboutinstructors/${instructor.id}`}>
                   <h3 className="text-left text-xl text-head font-semibold pb-3">
-                    Dr {instructor.Name}
+                    Dr. {instructor.Name}
                   </h3>
                 </Link>
 
